@@ -26,6 +26,9 @@ body {
 }
 .nav-bar {
 	background-color:fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 .nav-bar .content{
 	margin: 0 auto;
@@ -96,6 +99,7 @@ button:hover {
 	cursor: pointer;
 	background-color: #d95125;
 }
+
 /* Footer styles 
 	(all the styles inside the < footer > tag)
 */
