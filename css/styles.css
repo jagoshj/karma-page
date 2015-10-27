@@ -1,22 +1,101 @@
 /* General styles 
 	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-.content {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+html {
+  box-sizing: border-box;
 }
-
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*body {
+    background-color: LightGray;
+}
+div {
+    border: 1px solid Chocolate;*/
+}
 /* Header styles 
 	(all the styles inside the < header > or < nav > tags) 
 */
-
-
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.content {
+	width: 970px;
+  	height: 70px;
+  	padding: 0px 15px;
+}
+.nav-bar {
+	background-color:fff;
+}
+.nav-bar .content{
+	margin: 0 auto;
+}
+.nav-bar .logo {
+	height: 4em;
+}
+.nav-bar .links {
+	float: right;
+	color: #838994;
+	margin-top: 25px;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+.nav-bar .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.nav-bar .links li.active{
+	color: #4c5058;
+	font-weight: 500;
+}
+.nav-bar .links li:hover {
+	cursor: pointer;
+	color: #333333;
+}
 /* Content styles 
 	(all the styles inside the < sections > or < aside > tags)
 */
-
-
+.introduction {
+	background-image: url(../images/first-background.jpg);
+	background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+    display: block;
+}
+.introduction h1{
+	margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.introduction h1, h3{
+	color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction .buttons {
+	color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+button {
+	width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #d95125;
+}
 /* Footer styles 
 	(all the styles inside the < footer > tag)
 */
