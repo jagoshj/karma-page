@@ -137,15 +137,44 @@ button:hover {
 	width: 33.3333333%;
     display: inline-block;
     /* styles to assist with debugging */
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     box-sizing: border-box;
     height: 4em;
+}
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
 }
 /* Footer styles 
 	(all the styles inside the < footer > tag)
 */
-
-
+footer {
+	display: block;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.social {
+	background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
 /* Responsive styles 
 	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
