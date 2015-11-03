@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: 'Roboto', sans-serif;
 }
 ol, ul {
     list-style: none;
@@ -44,17 +45,11 @@ html {
 /*body {
     background-color: LightGray;
 }
-div {
-    border: 1px solid Chocolate;*/
-}
 /* Header styles 
 	(all the styles inside the < header > or < nav > tags) 
 */
-body {
-	 font-family: 'Roboto', sans-serif;
-}
 .content{
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
 }
 .nav-bar .content {
@@ -103,14 +98,18 @@ body {
     overflow: auto;
     display: block;
 }
-.introduction h1{
-	margin-top: 17.5rem;
-    font-size: 3.125rem;
-}
 .introduction h1, .introduction h3{
 	color: white;
     text-align: center;
     font-weight: 300;
+}
+.introduction h1{
+	margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
 }
 .introduction .buttons {
 	color: white;
@@ -135,11 +134,14 @@ button:hover {
 }
 .cases {
     background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 5rem;
+    margin-top: 7.875rem;
+    box-sizing: border-box;
+    padding-bottom: 15rem;
+    display: block;
+    clear: both;
 }
 .cases .content{
-	margin-top: 7.875rem;
+
     color: #1d1e21;
     text-align: center;
 }
@@ -148,7 +150,6 @@ button:hover {
     display: inline-block;
     /* styles to assist with debugging */
     /*border: 1px solid black;*/
-    box-sizing: border-box;
     height: 4em;
 }
 .cases .devices h3 {
@@ -166,7 +167,7 @@ button:hover {
 footer {
 	display: block;
 	margin: 0;
-    padding: 5rem;
+    padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -175,8 +176,6 @@ footer {
 }
 .social {
 	background-color: #fff;
-    overflow: auto;
-    padding-bottom: 9.375rem;
     text-align: center;
 }
 .social .icons > li {
